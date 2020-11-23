@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "2D Game Thing",
+"productVersion": "0.1",
+"dataUrl": "0.1-DEMO-web.data.unityweb",
+"wasmCodeUrl": "0.1-DEMO-web.wasm.code.unityweb",
+"wasmFrameworkUrl": "0.1-DEMO-web.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.4f1"
+}
