@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 2D Game Thing</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/0.1-DEMO-web.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">2D Game Thing</div>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Zombsody 2D Pre-Alpha</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/0.1-DEMO-web.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div id="header_container" class="clearfix">
+        <a id="logo" href="http://dejvoss.cz">Home</a>
+        <ul id="menu">
+          <li><a href="http://dejvoss.cz">Home</a></li>
+          <li><a href="http://dejvoss.cz/About/">About Me</a></li>
+          <li><a href="http://dejvoss.cz/Games/">Games</a></li>
+          <li><a href="http://dejvoss.cz/Tech/">Tech</a></li>
+          <li><a href="https://discord.gg/3panDRn">Discord Server</a></li>
+        </ul>
       </div>
-    </div>
-  </body>
+
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 768px; height: 768px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">Zombsody 2D Pre-Alpha</div>
+        </div>
+      </div>
+</body>
+
 </html>
