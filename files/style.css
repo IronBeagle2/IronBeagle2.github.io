@@ -61,9 +61,9 @@ input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #71b147; color:#593d29; text-shadow: none; }
-::selection { background:#71b147; color:#593d29; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #5f9f35; }
+::-moz-selection{ background: #033196; color:#593d29; text-shadow: none; }
+::selection { background:#033196; color:#593d29; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #033196; }
 
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
