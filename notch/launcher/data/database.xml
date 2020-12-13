@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Components>
+  <Component game="PreludeOfTheChambered" file="PoC.jar" mainClass="com.mojang.escape.EscapeApplet" link="https://dejvoss.cz/notch/launcher/PoC.jar" />
+  <Component game="LegendOfTheChambered" file="chambered.jar" mainClass="com.mojang.chambered.ChamberedApplet" link="https://dejvoss.cz/notch/launcher/chambered.jar" />
+</Components>
