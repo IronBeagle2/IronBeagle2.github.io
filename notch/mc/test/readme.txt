@@ -1,1 +1,0 @@
-Remember just extract this to your desktop then to play it just click Index.
