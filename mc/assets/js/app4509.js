@@ -16543,9 +16543,7 @@
                 obj.isWebRTCSupported)
               ) {
                 drawText(
-                  "You are the host. You can invite some (" +
-                    (game.hostInfo.maxPlayers - 1) +
-                    ") friends to join you.",
+                  "You are the host. You can't invite anyone because this game is fucked up.",
                   center,
                   ypos + 24 * scale
                 );
