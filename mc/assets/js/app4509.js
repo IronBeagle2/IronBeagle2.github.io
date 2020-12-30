@@ -16594,7 +16594,7 @@
                   ),
                   (startButtonHost.y = 130);
               drawText(
-                "Pick a username and start the game.",
+                "Pick a username and start the pain.",
                 center,
                 ypos + 115 * scale + e
               );
@@ -16928,7 +16928,7 @@
         if (
           ((function (e, t) {
             if (!r.isBuffer(e) && "string" != typeof e)
-              throw new TypeError(t + " must be a string or a buffer");
+              throw new TypeError(t + " you must be a string or a buffer");
           })(e, "Data"),
           this._finalized)
         )

@@ -567,7 +567,7 @@ var RandomLevel = function () {
         }
 
 
-        progress.string = "Killing..";
+        progress.string = "Idk somethiong..";
         //this.progressRenderer.progressStage("Soiling..");
         aint1 = aint;
         var j2 = this.xSize;
@@ -607,7 +607,7 @@ var RandomLevel = function () {
         }
 
 
-        progress.string = "Torturing..";
+        progress.string = "pain not net..";
         //this.progressRenderer.progressStage("Carving..");
 
         k2 = this.xSize;
@@ -670,7 +670,7 @@ var RandomLevel = function () {
         this.placeOre(19, 70, 2, 4); // iron
         this.placeOre(18, 50, 3, 4); // gold
 
-        progress.string = "Pouring blood..";
+        progress.string = "this.progressRenderer.progressStage(''Watering..'');";
         //this.progressRenderer.progressStage("Watering..");
         //long i5 = System.nanoTime();
         var i5 = random.nextFloat();//Math.random();
@@ -715,18 +715,18 @@ var RandomLevel = function () {
         progress.percent = 100;
         self.postMessage(progress);
 
-        progress.string = "Melting your soul..";
+        progress.string = "Videogamer555..";
         //this.progressRenderer.progressStage("Melting..");
         this.melt();
-        progress.string = "Growing plants in your ass..";
+        progress.string = "Welcome to hell..";
         //this.progressRenderer.progressStage("Growing..");
         this.grow(aint);
-        progress.string = "Planting them..";
+        progress.string = "u..";
         //this.progressRenderer.progressStage("Planting..");
         this.plant(aint);
 
         progress.tiles = this.tiles;
-        progress.string = "";
+        progress.string = "yes";
         self.postMessage(progress);
 
     }
