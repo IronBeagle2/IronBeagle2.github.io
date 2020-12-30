@@ -79728,7 +79728,7 @@
             if (t === e._camLocBlock) return;
             if (0 === t || 40 === t)
               e._camScreen.setEnabled(!1),
-                (e._scene.fogColor = new BABYLON.Color3(0.9, 0.95, 1)),
+                (e._scene.fogColor = new BABYLON.Color3(0.1, 0, 0)),
                 (e._scene.fogDensity = e.fogWorld),
                 (e._scene.clearColor = e._scene.fogColor);
             else {
@@ -86686,15 +86686,15 @@
           B = [],
           k = T("Options...", 0, 20, M);
         B.push(k);
-        var V = T("Generate new level...", 0, 60, function () {
+        var V = T("Create new Hell...", 0, 60, function () {
           (F = $), _e.redraw(), (h = null);
         });
         if ((B.push(V), !_ || i)) {
-          var N = T("Save level..", 0, 100, function () {
+          var N = T("Save Hell..", 0, 100, function () {
             (F = ne), _e.redraw(), (h = null);
           });
           B.push(N);
-          var z = T("Load level..", 0, 140, function () {
+          var z = T("Load Hell..", 0, 140, function () {
             (F = oe), _e.redraw(), (h = null);
           });
           B.push(z);
@@ -86704,7 +86704,7 @@
           var G = T("Copy Hidden", 0, 100, E);
           B.push(G);
         }
-        var W = T("Back to game", 0, 230, function () {
+        var W = T("Back to Hell", 0, 230, function () {
           _e.close();
         });
         B.push(W);
