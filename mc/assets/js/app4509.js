@@ -79741,17 +79741,17 @@
                 s &&
                 s < 1 &&
                 (17 == t &&
-                  ((e._camScreenMat.diffuseColor = new h(0.8, 0, 0)),
-                  (e._camScreenMat.alpha = 0.8),
-                  e._camScreen.setEnabled(!0),
-                  (e._scene.fogColor = new BABYLON.Color3(0.1, 0, 0)),
-                  (e._scene.fogDensity = e.fogLava),
-                  (e._scene.clearColor = e._scene.fogColor)),
-                (7 != t && 41 != t) ||
                   ((e._camScreenMat.diffuseColor = new h(0, 0, 0.8)),
                   (e._camScreenMat.alpha = 0.5),
                   e._camScreen.setEnabled(!0),
                   (e._scene.fogColor = new BABYLON.Color3(0, 0, 0.1)),
+                  (e._scene.fogDensity = e.fogLava),
+                  (e._scene.clearColor = e._scene.fogColor)),
+                (7 != t && 41 != t) ||
+                  ((e._camScreenMat.diffuseColor = new h(0.8, 0, 0)),
+                  (e._camScreenMat.alpha = 0.8),
+                  e._camScreen.setEnabled(!0),
+                  (e._scene.fogColor = new BABYLON.Color3(0.1, 0, 0)),
                   (e._scene.fogDensity = e.fogWater),
                   (e._scene.clearColor = e._scene.fogColor)));
             }
