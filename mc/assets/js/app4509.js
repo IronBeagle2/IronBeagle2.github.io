@@ -86990,7 +86990,7 @@
                 i = 13 * t,
                 n = 2 * t;
               (r.fillStyle = "rgb(63,63,63)"),
-                r.fillText("0.0.23a_01", e + n, i + n),
+                r.fillText("0.0.23a_01 JavaScript Edition (Hell)", e + n, i + n),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
@@ -86998,7 +86998,7 @@
                     2 * i + 4 * t + n
                   ),
                 (r.fillStyle = "rgb(255,255,255)"),
-                r.fillText("0.0.23a_01", e, i),
+                r.fillText("0.0.23a_01 JavaScript Edition (Hell)", e, i),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
