@@ -86917,10 +86917,10 @@
                 t = Math.floor(0.5 * a),
                 i = "Game menu";
               F == j && ((i = "Options"), (e -= 40 * n)),
-                F == $ && (i = "Generate new level"),
-                F == ne && (i = "Save level"),
-                F == oe && (i = "Load level"),
-                F == se && ((i = "Controls"), (e -= 40 * n)),
+                F == $ && (i = "Generate new hellish world"),
+                F == ne && (i = "Save this"),
+                F == oe && (i = "Load that"),
+                F == se && ((i = "I am a "), (e -= 40 * n)),
                 S(i, t, e),
                 (F != ne && F != oe) || S("<html>", t, e + 120 * n);
               for (var r = 0; r < F.length; r++) F[r].draw();
