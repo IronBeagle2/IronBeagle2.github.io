@@ -86915,7 +86915,7 @@
                 m.fillRect(0, 0, a, c);
               var e = Math.floor(0.5 * c) - 120 * n,
                 t = Math.floor(0.5 * a),
-                i = "Game menu";
+                i = "Game menu (WARNING: GAME LOUD!)";
               F == j && ((i = "Options"), (e -= 40 * n)),
                 F == $ && (i = "Generate new hellish world"),
                 F == ne && (i = "Save this"),
