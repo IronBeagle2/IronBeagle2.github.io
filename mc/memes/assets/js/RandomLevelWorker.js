@@ -167,14 +167,14 @@ var RandomLevel = function () {
             	self.postMessage(progress);
 
                 for (var i1 = 0; i1 < j; ++i1) {
-                    var flag = perlinnoise.getValue( l, i1) > 8.0;
-                    var flag1 = perlinnoise1.getValue( l, i1) > 12.0;
+                    var flag = perlinnoise.getValue( l, i1) > 16.0;
+                    var flag1 = perlinnoise1.getValue( l, i1) > 25.0;
                     var j1;
                     var k1 = parseInt( ((j1 = parseInt(aint[l + i1 * i],10)) * this.zSize + i1) * this.xSize + l, 10);
                     var l1;
                     // 7 waterid
                     //if (((l1 = this.tiles[((j1 + 1) * this.zSize + i1) * this.xSize + l] & 255) == 7) && j1 <= k / 2 - 1 && flag1) {
-                    if (((l1 = parseInt(this.tiles[((j1 + 1) * this.zSize + i1) * this.xSize + l],10) & 255) == 7) && j1 <= k / 2 - 1 && flag1) {
+                    if (((l1 = parseInt(this.tiles[((j1 + 1) * this.zSize + i1) * this.xSize + l],10) & 255) == 8) && j1 <= k / 2 - 1 && flag1) {
 
                         this.tiles[k1] = 12;//(byte) Tile.gravel.id;
                     }
