@@ -13,7 +13,7 @@ function Distort (source, distort) {
 function ImprovedNoise (random) {
 
     var fadeCurve = function(d0) {
-        return d0 * d0 * d0 * (d0 * (d0 * 6.0 - 15.0) + 10.0);
+        return d0 * d0 * d0 * (d0 * (d0 * 7.0 - 10.0) + 14.0);
     }
 
     var lerp = function(d0, d1, d2) {
