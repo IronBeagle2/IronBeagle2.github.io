@@ -84282,6 +84282,7 @@
               "calm1",
               "calm2",
               "calm3",
+              "calm4",
             ],
             i = null,
             r = {
@@ -84316,7 +84317,7 @@
                     i.volume(r, t),
                     i.on("end", function () {
                       h.startMusic();
-                    });
+                    });/*how does this work?*/
                 }, e);
             },
             setMusicVolume: function (e) {
