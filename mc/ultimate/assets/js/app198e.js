@@ -17175,9 +17175,7 @@
                 obj.isWebRTCSupported)
               ) {
                 drawText(
-                  "You are the host. You can invite some (" +
-                    (game.hostInfo.maxPlayers - 1) +
-                    ") friends to join you.",
+                  "Multiplayer doesn't work. Don't even bother trying it.",
                   center,
                   ypos + 24 * scale
                 );
@@ -17268,7 +17266,7 @@
                 ),
                 startButtonHost.draw(),
                 drawText(
-                  "Left click to place or mine blocks (right click to toggle).",
+                  "This mod only belongs to dejvoss.cz. If you see it elsewhere, go play it to dejvoss.cz/mc/ultimate/.",
                   center,
                   ypos + 190 * scale + e
                 );
@@ -87934,6 +87932,10 @@
             6,
             5,
             10,
+            17,
+            18,
+            19,
+            20,
             16,
             15,
             11,
@@ -87941,6 +87943,7 @@
             23,
             22,
             21,
+            41,
             24,
             25,
             26,
@@ -88056,13 +88059,13 @@
             y: 0,
           },
           o = document.createElement("canvas");
-        (o.width = 480 * t), (o.height = 300 * t);
+        (o.width = 480 * t), (o.height = 350 * t);
         var s = o.getContext("2d");
         s.imageSmoothingEnabled = !1;
         var a = document.getElementById("previewWindow");
         a.appendChild(o),
           (a.style.width = 480 * t + "px"),
-          (a.style.height = 300 * t + "px");
+          (a.style.height = 350 * t + "px");
         var c = 0,
           h = 0,
           u = function () {
@@ -88080,6 +88083,10 @@
             6,
             5,
             7,
+            17,
+            18,
+            19,
+            20,
             10,
             16,
             15,
@@ -88088,6 +88095,7 @@
             23,
             22,
             21,
+            41,
             24,
             25,
             26,
@@ -88170,9 +88178,9 @@
             }
           },
           redraw: function () {
-            s.clearRect(0, 0, 480 * t, 300 * t),
+            s.clearRect(0, 0, 480 * t, 350 * t),
               (s.fillStyle = "rgba(0,0,0,0.6)"),
-              s.fillRect(0, 0, 480 * t, 300 * t),
+              s.fillRect(0, 0, 480 * t, 350 * t),
               (function (e, i, r) {
                 (s.font = 16 * t + "px Minecraft"),
                   (s.textBaseline = "alphabetic"),
@@ -88208,9 +88216,9 @@
               window.innerHeight < 900 && (t = 1),
               t != e &&
                 ((o.width = 480 * t),
-                (o.height = 300 * t),
+                (o.height = 350 * t),
                 (a.style.width = 480 * t + "px"),
-                (a.style.height = 300 * t + "px"),
+                (a.style.height = 350 * t + "px"),
                 (s.imageSmoothingEnabled = !1),
                 m.redraw());
           },
@@ -88688,7 +88696,7 @@
                 i = 13 * t,
                 n = 2 * t;
               (r.fillStyle = "rgb(63,63,63)"),
-                r.fillText("0.0.23a_01", e + n, i + n),
+                r.fillText("0.0.23a_01 Ultimate", e + n, i + n),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
@@ -88696,7 +88704,7 @@
                     2 * i + 4 * t + n
                   ),
                 (r.fillStyle = "rgb(255,255,255)"),
-                r.fillText("0.0.23a_01", e, i),
+                r.fillText("0.0.23a_01 Ultimate", e, i),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
