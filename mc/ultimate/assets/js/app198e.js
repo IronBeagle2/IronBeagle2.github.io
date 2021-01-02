@@ -87922,12 +87922,14 @@
         var l = new Image();
         (l.onload = h), (l.src = "assets/textures/hotbar_selection.png");
         var f = [
+            1,
             2,
             9,
             3,
             4,
             13,
             14,
+            7,
             8,
             6,
             5,
