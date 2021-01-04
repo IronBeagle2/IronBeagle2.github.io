@@ -1,0 +1,6 @@
+a0.0.0-1 http://dejvoss.cz/cliffblaster/a0.0.0-1.jar
+a0.0.0-2 http://dejvoss.cz/cliffblaster/a0.0.0-2.jar
+a0.0.1 http://dejvoss.cz/cliffblaster/a0.0.1.jar
+a0.0.2 http://dejvoss.cz/cliffblaster/a0.0.2.jar
+a0.0.3 http://dejvoss.cz/cliffblaster/a0.0.3.jar
+a0.0.4 http://dejvoss.cz/cliffblaster/a0.0.4.jar
