@@ -27,7 +27,7 @@ body {margin: 0; font-family: 'Catamaran'; color: #fff; background: rgb(20,20,25
 .topbar .menu > li:hover > a:after, .topbar .menu > li > a.a:after {left: calc(0% + 15px); width: calc(100% - 30px);}
 
 .topbar.small {box-shadow: 0 0 15px 0 rgba(0,0,0,.2); color: #000 !important; padding: 0px; background: rgb(39, 39, 39)}
-.topbar.small .mobilemenu {margin: 0; fill: #000;}
+.topbar.small .mobilemenu {margin: 0; fill: rgb(255, 255, 255);}
 .topbar.small li a {color: rgb(255, 255, 255);}
 
 #animatedlogo {max-width: 230px; width: 100%; stroke-width: 40;}
