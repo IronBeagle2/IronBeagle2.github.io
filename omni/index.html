@@ -6,41 +6,40 @@
     <meta name="theme-color" content="#a51919">
     <meta property="og:site_name" content="www.omniarchive.net" />
     <meta property="og:title" content="Omniarchive" />
+    <meta property="og:description" content="This is a sample description" />
     <meta property="og:url" content="http://www.omniarchive.net" />
-    <link href="./materialdesignicons.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,900" rel="stylesheet" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css" />
-    <script src="/js/jquery.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
-<body onload="homevideos();">
+<body>
     <div class="topbar" align="center" style="animation: opacity 1s 1s forwards; opacity: 0" align="center">
         <div id="menumask" onclick="closesidebar();" ontouchstart="closesidebar();"></div>
         <div class="inner" align="left">
             <svg onclick="opensidebar();" class="mobilemenu" viewBox="0 0 24 24">
                 <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
             </svg>
-            <a href="/">
+            <a href="index.html">
                 <div class="logo"></div>
             </a>
             <ul class="menu">
                 <li>
-                    <a class=" a" href="/"></span>Home</a>
+                    <a class=" a" href="">Home</a>
                 </li>
                 <li>
-                    <a class="" href="/about-us/index.html"></span>About us</a>
+                    <a class="" href="/about-us/index.html">About us</a>
                 </li>
                 <li>
-                    <a class="" href="/downloads/index.html"></span>Downloads</a>
+                    <a class="" href="/downloads/index.html">Downloads</a>
                 </li>
                 <li>
-                    <a class="" href="/discord/index.html"></span>Discord</a>
+                    <a class="" href="/discord/index.html">Discord</a>
                 </li>
                 <li>
-                    <a class=""
-                        href="/index/index.html"></span>Index</a>
+                    <a class="" href="/index/index.html">Index</a>
                 </li>
             </ul>
         </div>
@@ -66,7 +65,7 @@
         </div>
 
 
-        <div class="content bwhite" align="center" style="background: rgb(61, 61, 61); color: rgb(255, 255, 255)">
+        <div class="content bwhite" align="center" id=firsttextblock style="background: rgb(61, 61, 61); color: rgb(255, 255, 255)">
             <div class="inner">
 
                 <div class="row">
@@ -115,8 +114,6 @@
             </div>
         </div>
     </center>
-    <script src="./js/omegasvg.js"></script>
-    <script src="./js/materialize.js"></script>
 </body>
 
 </html>
