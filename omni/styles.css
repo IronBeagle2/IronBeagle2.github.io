@@ -11,7 +11,7 @@ body {margin: 0; font-family: 'Catamaran'; color: #fff; background: rgb(20,20,25
 .topbar .mobilemenu {margin-top: 10px; display: none; transition: margin .1s; fill: #fff; width: 24px; padding: 15px; height: 24px; position: absolute; top: 0px; left: 0px;}
 
 .topbar .inner {width: 87%; max-width: 1300px}
-.topbar .logo {text-align: center; font-size: 23px; font-weight: 900; color: #fff; margin: 11px 0; box-sizing: content-box; float: left; width: 60px; height: 38px; background-image: url("https://cdn.lemoncze.com/logos/oohostw.png"); background-position: center center; background-size: contain; background-repeat: no-repeat}
+.topbar .logo {text-align: center; font-size: 23px; font-weight: 900; color: #fff; margin: 11px 0; box-sizing: content-box; float: left; width: 60px; height: 38px; background-position: center center; background-size: contain; background-repeat: no-repeat}
 
 .topbar .menu ul {overflow: hidden; box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2); right: 0; top: 80%; transition: all .1s; border-radius: 8px; background-color: #fff; position: absolute; opacity: 0; pointer-events: none}
 .topbar .menu ul a {white-space: nowrap; color: #000;}
@@ -34,7 +34,7 @@ body {margin: 0; font-family: 'Catamaran'; color: #fff; background: rgb(20,20,25
 #animatedlogo * {transition: fill .3s; fill: transparent; stroke: #fff}
 #animatedlogo.full * {fill: #fff;}
 
-.backgroundimg {/*filter: blur(10px);*/ z-index: -10; top: -5%; left: -5%; position: fixed; width: 110%; height: 110%; background-image: url("https://cdn.lemoncze.com/backgrounds/leaves.jpg"); opacity: .2; background-size: cover; background-position: center;}
+.backgroundimg { z-index: -10; top: -5%; left: -5%; position: fixed; width: 110%; height: 110%; opacity: .2; background-size: cover; background-position: center;}
 
 .semiopacity {opacity: .5}
 .underlined {border-bottom: 1px solid #fff; display: inline-block; padding-bottom: 3px}
@@ -68,6 +68,8 @@ svg {box-sizing: content-box;}
 
 .card.special {top: 0; position: relative; transition: top .1s; margin-bottom: 20px; overflow: hidden; padding: 0px; background: #fff; max-width: 500px; box-shadow: 0px 2px 15px 0px rgba(0,0,0,.2); border-radius: 10px;}
 .card.special:hover {top: -10px;}
+
+/* stupid css */
 
 .footer .inner {padding-top: 5px; font-size: 17px}
 .footer .row {margin: 0;}
@@ -138,19 +140,11 @@ h1 {font-weight: 700}
 }
 
 
-
-
-
-
-
-
-/* CUSTOM CSS */
-
-.backgroundimg {background-image: url("bcg.png"); opacity: .5;}
-.topbar .logo {background-image: url("logo.png");}
+.backgroundimg {background-image: url("bcg2.png"); opacity: .5;} /* Sets background image */
+.topbar .logo {background-image: url("logo.png");} /* Sets logo image */
 .header {filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5))}
-.topbar.small .logo {background-image: url("logo.png");}
-.topbar .menu > li > a:after {background: #7c7c7c}
+.topbar.small .logo {background-image: url("logo.png");} /* Sets logo */
+.topbar .menu > li > a:after {background: #000000} /* Sets color of the little shit under topbar */
 
 @media only screen and (max-width: 601px) {
     .topbar .menu li .a {color: #f44336; fill: #f44336; box-shadow: inset 3px 0px 0px 0px #f44336}
