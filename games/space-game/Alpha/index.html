@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Space Game Pre-Alpha</title>
+  <link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
+  <link rel="stylesheet" href="https://dejvoss.cz/files/style.css">
+
+  <script src="/files/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Alpha.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div id="iframe">
+  </div>
+  <div id="wrap">
+    <header>
+      <div id="header_container" class="clearfix">
+        <a id="logo" href="https://dejvoss.cz">Home</a>
+        <ul id="menu">
+          <li><a href="https://dejvoss.cz">Home</a></li>
+          <li><a href="https://dejvoss.cz/About/">About Me</a></li>
+          <li><a href="https://dejvoss.cz/Games/">Games</a></li>
+          <li><a href="https://dejvoss.cz/Blog/">Blog</a></li>
+          <li><a href="https://discord.gg/3panDRn">Discord Server</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Space Game Pre-Alpha</div>
+      </div>
+    </div>
+
+    <footer>
+      DEJVOSS &copy; 2019-2020
+    </footer>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2> Controls</h2>
+    <p> WASD - Movement | Shift - Crouch | Q - Jetpack | E - Pick up objects | LMB - Shoot / Throw objects | RMB - Drop
+      objects | F - Flashlight | R - Reload Level | Z - Test Display</p> -->
+</body>
+
+</html>

@@ -9229,6 +9229,7 @@
                       "dirt",
                       "grass_dirt",
                       "stone",
+                      "wood",
                       "rock",
                       "bedrock",
                       "sand",
@@ -9259,7 +9260,6 @@
                       "color15",
                     ],
                     q = [
-                      "wood",
                       "leaves_opaque",
                       "glass",
                       "water",
@@ -9322,7 +9322,6 @@
                     })),
                     (this.woodID = V.registry.registerBlock(4, {
                       material: "wood",
-                      opaque: !1,
                     })),
                     (this.redflowerID = J[1]),
                     (this.yellowflowerID = J[2]),
@@ -9374,10 +9373,6 @@
                     })),
                     (this.goldID = V.registry.registerBlock(21, {
                       material: "gold",
-                      solid: !1,
-                      fluid: !0,
-                      fluidDensity: 1,
-                      viscosity: 0.5,
                     })),
                     (this.spongeID = V.registry.registerBlock(22, {
                       material: "sponge",
@@ -79750,7 +79745,7 @@
                   (e._scene.fogColor = new BABYLON.Color3(0, 0, 0.1)),
                   (e._scene.fogDensity = e.fogLava),
                   (e._scene.clearColor = e._scene.fogColor)),
-                  (7 != t && 41 != t) ||
+                (7 != t && 41 != t) ||
                   ((e._camScreenMat.diffuseColor = new h(0.8, 0, 0)),
                   (e._camScreenMat.alpha = 0.8),
                   e._camScreen.setEnabled(!0),
@@ -86994,7 +86989,7 @@
                 i = 13 * t,
                 n = 2 * t;
               (r.fillStyle = "rgb(63,63,63)"),
-                r.fillText("0.0.23a_01js Hell Edition v4", e + n, i + n),
+                r.fillText("0.0.23a_01js Hell Edition", e + n, i + n),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
@@ -87002,7 +86997,7 @@
                     2 * i + 4 * t + n
                   ),
                 (r.fillStyle = "rgb(255,255,255)"),
-                r.fillText("0.0.23a_01js Hell Edition v4", e, i),
+                r.fillText("0.0.23a_01js Hell Edition", e, i),
                 o.showFps &&
                   r.fillText(
                     o.fps + " fps, " + o.chunkUpdates + " chunk updates",
