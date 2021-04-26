@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en" class="no-js">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Space Game Pre-Alpha</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>My games</title>
+  <meta name="author" content="DEJVOSS">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
   <link rel="stylesheet" href="https://dejvoss.cz/files/style.css">
-
-  <script src="/files/UnityProgress.js"></script>
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Alpha.json", { onProgress: UnityProgress });
-  </script>
+  <link rel="stylesheet" media="handheld" href="https://dejvoss.cz/files/handheld.css">
 </head>
 
 <body>
@@ -29,24 +29,25 @@
         </ul>
       </div>
     </header>
-
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Space Game Pre-Alpha</div>
-      </div>
+    <div id="main" role="main" class="clearfix controller-Site action-index">
+      <section class="left">
+        <h1>Space Game</h1>
+        <p>An unfinished first person shooter with pixelated graphics style straight from the 90s. The game is no longer
+          in development, but I might return to it sometimes. Here's some story, that wasn't implemented:<br>You are an
+          astronaut who arrives on an orbit station "121-Alpha". The station is controlled by a robot (who's name I
+          haven't made yet), who acts like a regular autopilot, but in reality, he controlls evil robots who infested
+          the entire base. It is your duty to kill all the robots, and then face the final boss of the game (the main
+          evil robot).<br>The game was meant to be played in singleplayer or multiplayer.<br>You can try the alpha
+          version <a href="https://dejvoss.cz/games/space-game/alpha">here</a>.</p>
+        <img src="space_game_preview.png" width="560" height="315"><br>
+      </section>
+      <div style="clear:both; height:0"></div>
     </div>
+  </div>
 
-    <footer>
-      DEJVOSS &copy; 2019-2020
-    </footer>
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h2> Controls</h2>
-    <p> WASD - Movement | Shift - Crouch | Q - Jetpack | E - Pick up objects | LMB - Shoot / Throw objects | RMB - Drop
-      objects | F - Flashlight | R - Reload Level | Z - Test Display</p> -->
+  <footer>
+    DEJVOSS &copy; 2019-2021
+  </footer>
 </body>
 
 </html>
