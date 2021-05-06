@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Legend Of The Chambered</title>
+    <title>Unity WebGL Player | Legend Of The Chambered</title>
   </head>
-  <body style="text-align: center" bgcolor="#23201A" text="#ffff80">
-    <font face="verdana" size=1>
-    <center>
-    <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: url('Build/webgl.jpg') center / cover"></canvas>
-    <script src="Build/webgl.loader.js"></script>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: url('Build/webgl2.jpg') center / cover"></canvas>
+    <script src="Build/webgl2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -20,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/webgl.data.br",
-        frameworkUrl: "Build/webgl.framework.js.br",
-        codeUrl: "Build/webgl.wasm.br",
+        dataUrl: "Build/webgl2.data",
+        frameworkUrl: "Build/webgl2.framework.js",
+        codeUrl: "Build/webgl2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DEJVOSS",
         productName: "Legend Of The Chambered",
@@ -31,9 +29,5 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
-    <br>
-    Use w, a, s, d to move and q, e to turn around
-    </font>
-    </center>
   </body>
 </html>
