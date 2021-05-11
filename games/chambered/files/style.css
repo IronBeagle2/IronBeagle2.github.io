@@ -1,16 +1,16 @@
 body {
   /*background-image: url("bg.gif");*/
-  background-color: #ffff80;
+  background-color: #85827A;
   max-width: 700px;
   margin: auto;
   /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
   font-size: 15px;
-  color: #23201A;
+  color: #222244;
 }
 
 a {
   text-decoration: none;
-  color: #868624;
+  color: #000000;
   text-decoration: underline;
 }
 
