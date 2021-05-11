@@ -1,0 +1,27 @@
+body {
+    background:#111 url(https://dejvoss.cz/files/bg_main.gif);
+    max-width: 700px;
+    margin: auto;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-size: 15px;
+    color: #222244;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  canvas {
+    border: 5px solid rgb(0, 0, 0);
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 10px;
+  }
