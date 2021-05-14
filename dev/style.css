@@ -71,6 +71,32 @@ header a:visited {
   color: #fff;
 }
 
+#menu li ul {
+  margin:0;
+  padding:0;
+  position:absolute;
+  display:none;
+  z-index:5;
+  padding-top:6px;
+}
+
+#menu li ul li {
+  float:none;
+  margin:0;
+  display:inline;
+}
+
+#menu li ul li a {
+  display:block;
+  padding:6px 10px;
+  background:#333;
+  white-space:nowrap;
+}
+
+#menu li ul li a:hover {
+  background:#444;
+}
+
 .footer {
   text-align: center;
   font-size: 12px;
