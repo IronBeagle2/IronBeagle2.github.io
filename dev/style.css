@@ -14,7 +14,7 @@ a:visited {
   text-decoration: none;
 }
 
-header {
+/*header {
   width: 100%;
   position: fixed;
   height: 48px;
@@ -95,6 +95,48 @@ header a:visited {
 
 #menu li ul li a:hover {
   background:#444;
+}*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  width: 100%;
+  position: absolute;
+  height: 48px;
+  left: 0;
+  background: #01335c url(https://dejvoss.cz/files/bg_top.gif);
+}
+
+#logo {
+  display: block;
+  width: 280px;
+  height: 48px;
+  background: transparent url(https://dejvoss.cz/files/logo_small.png) no-repeat
+    0 1px;
+  display: block;
+  overflow: hidden;
+  text-indent: -10000px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #00000000;
+  color: white;
 }
 
 .footer {
