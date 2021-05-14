@@ -1,27 +1,82 @@
 body {
-    background:#111 url(https://dejvoss.cz/files/bg_main.gif);
-    max-width: 700px;
-    margin: auto;
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-    font-size: 15px;
-    color: #222244;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #000000;
-    text-decoration: underline;
-  }
-  
-  canvas {
-    border: 5px solid rgb(0, 0, 0);
-  }
-  
-  .header {
-    text-align: center;
-  }
-  
-  .footer {
-    text-align: center;
-    font-size: 10px;
-  }
+  background: #111 url(https://dejvoss.cz/files/bg_main.gif);
+  max-width: 700px;
+  font-size: 15px;
+  margin: auto;
+  color: #e0d0d0;
+  font: 15px/1.4 "Helvetica Neue", sans-serif;
+}
+
+a,
+a:active,
+a:visited {
+  color: #aaf;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  height: 48px;
+  left: 0;
+  background: #01335c url(https://dejvoss.cz/files/bg_top.gif);
+}
+
+header a,
+header a:active,
+header a:visited {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header_container {
+  width: 1000px;
+  margin: auto;
+}
+
+#logo {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  float: left;
+  width: 280px;
+  height: 48px;
+  background: transparent url(https://dejvoss.cz/files/logo_small.png) no-repeat
+    0 1px;
+  display: block;
+  overflow: hidden;
+  text-indent: -10000px;
+}
+
+#menu {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 0 0;
+  width: 700px;
+  margin-top: 0;
+  float: left;
+  margin-left: 0;
+}
+
+#menu li {
+  float: left;
+  margin-left: 10px;
+}
+
+#menu li a,
+#menu li a:active,
+#menu li a:visited {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(112, 112, 112);
+}
+
+canvas {
+  border: 5px solid rgb(0, 0, 0);
+}
