@@ -1,10 +1,10 @@
 body {
   background: #111 url(https://dejvoss.cz/files/bg_main.gif);
   max-width: 700px;
-  font-size: 15px;
+  font-size: 16px;
   margin: auto;
   color: #e0d0d0;
-  font: 15px/1.4 "Helvetica Neue", sans-serif;
+  font: 16px/1.4 "Helvetica Neue", sans-serif;
 }
 
 a,
@@ -16,6 +16,8 @@ a:visited {
 
 /* Add a black background color to the top navigation */
 .topnav {
+  display: flex;
+  justify-content: center;
   width: 100%;
   position: absolute;
   height: 48px;
