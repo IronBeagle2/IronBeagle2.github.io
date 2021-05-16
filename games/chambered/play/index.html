@@ -2,68 +2,69 @@
 <html lang="en-us">
 
 <head>
-	<title>DEJVOSS - Chambered</title>
-	<link rel="stylesheet" href="https://dejvoss.cz/games/chambered/files/styles.css">
-	<link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
+  <title>DEJVOSS - Chambered</title>
+  <link rel="stylesheet" href="https://dejvoss.cz/games/chambered/files/styles.css">
+  <link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
 </head>
 
 <body>
-	<header>
-		<div class="topnav">
-			<a id="logo" href="https://dejvoss.cz/games/chambered">Home</a>
-			<a href="https://dejvoss.cz/games/chambered">Home</a>
-			<a href="https://dejvoss.cz/games/chambered/news">News</a>
-			<a href="https://dejvoss.cz/games/chambered/play">Play</a>
-		</div>
-	</header>
+  <header>
+    <div class="topnav">
+      <a id="logo" href="https://dejvoss.cz/games/chambered">Home</a>
+      <a href="https://dejvoss.cz/games/chambered">Home</a>
+      <a href="https://dejvoss.cz/games/chambered/news">News</a>
+      <a href="https://dejvoss.cz/games/chambered/play">Play</a>
+    </div>
+  </header>
 
-	<br><br><br>
+  <br><br><br>
   <canvas id="unity-canvas" width=640 height=480
-  style="width: 640px; height: 480px; background: url('Build/webgl.jpg') center / cover"></canvas>
-<script src="Build/webgl.loader.js"></script>
+    style="width: 640px; height: 480px; background: url('Build/webgl.jpg') center / cover"></canvas>
+  <script src="Build/webgl.loader.js"></script>
 
-<script>
-  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-    // Mobile device style: fill the whole browser client area with the game canvas:
-    var meta = document.createElement('meta');
-    meta.name = 'viewport';
-    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-    document.getElementsByTagName('head')[0].appendChild(meta);
-  }
+  <script>
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+    }
 
-  createUnityInstance(document.querySelector("#unity-canvas"), {
-    dataUrl: "Build/webgl.data",
-    frameworkUrl: "Build/webgl.framework.js",
-    codeUrl: "Build/webgl.wasm",
-    streamingAssetsUrl: "StreamingAssets",
-    companyName: "DEJVOSS",
-    productName: "Legend Of The Chambered",
-    productVersion: "1.0",
-    // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-    // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-  });
-</script>
-<h3>Controls</h3>
-<ul>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/webgl.data",
+      frameworkUrl: "Build/webgl.framework.js",
+      codeUrl: "Build/webgl.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DEJVOSS",
+      productName: "Legend Of The Chambered",
+      productVersion: "1.0",
+      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    });
+  </script>
+  <h3>Controls</h3>
+  <ul>
+    <p>
+      <li>W, A, S, D (Movement)</li>
+      <li>Left mouse button (Turning)</li>
+      <li>Q (Spawn menu)</li>
+    </p>
+  </ul>
+  <hr>
   <p>
-    <li>W, A, S, D (Movement)</li>
-    <li>Left mouse button (Turning)</li>
-    <li>Q (Spawn menu)</li>
+    Alternatively, you can download the standalone clients here: <a
+      href="http://dejvoss.cz/games/chambered/win_x86.zip">Windows</a>; <a
+      href="http://dejvoss.cz/games/chambered/mac.zip">MacOS</a>; <a
+      href="http://dejvoss.cz/games/chambered/android.zip">Android</a>
   </p>
-</ul>
-<hr>
-<p>
-  Alternatively, you can download the standalone clients here: <a
-    href="http://dejvoss.cz/games/chambered/win_x86.zip">Windows;</a> <a
-    href="http://dejvoss.cz/games/chambered/mac.zip">MacOS</a>
-</p>
-<hr>
+  <hr>
 
-<div class="footer">
-  Game art is copyright <a href="http://www.notch.net">Markus Persson</a>.
-  Everything else is copyright <a href="http://dejvoss.cz">DEJVOSS</a>.
-  <p>All rights reserved.</p>
-</div>
+  <div class="footer">
+    Game art is copyright <a href="http://www.notch.net">Markus Persson</a>.
+    Everything else is copyright <a href="http://dejvoss.cz">DEJVOSS</a>.
+    <p>All rights reserved.</p>
+  </div>
 
 </body>
 
