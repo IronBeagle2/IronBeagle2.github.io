@@ -2,26 +2,27 @@
 <html lang="en-us">
 
 <head>
-	<title>DEJVOSS - Fractaler</title>
-	<link rel="stylesheet" href="https://dejvoss.cz/files/styles.css">
-	<link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
+  <title>DEJVOSS - Fractaler</title>
+  <link rel="stylesheet" href="https://dejvoss.cz/files/styles.css">
+  <link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
 </head>
 
 
 <body>
-	<header>
-		<div class="topnav">
-			<a id="logo" href="https://dejvoss.cz">Home</a>
-			<a href="https://dejvoss.cz">Home</a>
-			<a href="https://dejvoss.cz/news">News</a>
-			<a href="https://dejvoss.cz/games">Games</a>
-			<a href="https://dejvoss.cz/contact">Contact</a>
-		</div>
-	</header>
+  <header>
+    <div class="topnav">
+      <a id="logo" href="https://dejvoss.cz">Home</a>
+      <a href="https://dejvoss.cz">Home</a>
+      <a href="https://dejvoss.cz/news">News</a>
+      <a href="https://dejvoss.cz/games">Games</a>
+      <a href="https://dejvoss.cz/contact">Contact</a>
+    </div>
+  </header>
 
-	<br><br>
-	<h3>Fractaler</h3>
-  <canvas id="unity-canvas" width=960 height=600 style="width: 700px; height: 600px; background: url('Build/webgl.jpg') center / cover"></canvas>
+  <br><br>
+  <h3>Fractaler</h3>
+  <canvas id="unity-canvas" width=700 height=600
+    style="width: 700px; height: 600px; background: url('Build/webgl.jpg') center / cover"></canvas>
   <script src="Build/webgl.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -44,14 +45,14 @@
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     });
   </script>
-    <ul>
-      <p>Controls: W, A, S, D to move around; +, - to zoom in/out.</p>
-    </ul>
-	<hr>
+  <ul>
+    <p>Controls: W, A, S, D to move around; +, - to zoom in/out.</p>
+  </ul>
+  <hr>
 
-	<div class="footer">
-		<p>Copyright DEJVOSS. All rights reserved.</p>
-	</div>
+  <div class="footer">
+    <p>Copyright DEJVOSS. All rights reserved.</p>
+  </div>
 
 </body>
 
