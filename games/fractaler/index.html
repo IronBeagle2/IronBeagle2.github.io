@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>DEJVOSS - Fractaler</title>
-  </head>
-  <body style="text-align: center" bgcolor="#595959">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: url('Build/webgl.jpg') center / cover"></canvas>
-    <script src="Build/webgl.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-      }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/webgl.data",
-        frameworkUrl: "Build/webgl.framework.js",
-        codeUrl: "Build/webgl.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DEJVOSS",
-        productName: "Fractaler",
-        productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-    <p>Use w, a, s, d to move; +, - to zoom in and out</p>
-  </body>
+<head>
+	<title>DEJVOSS - Fractaler</title>
+	<link rel="stylesheet" href="https://dejvoss.cz/files/styles.css">
+	<link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
+</head>
+
+
+<body>
+	<header>
+		<div class="topnav">
+			<a id="logo" href="https://dejvoss.cz">Home</a>
+			<a href="https://dejvoss.cz">Home</a>
+			<a href="https://dejvoss.cz/news">News</a>
+			<a href="https://dejvoss.cz/games">Games</a>
+			<a href="https://dejvoss.cz/contact">Contact</a>
+		</div>
+	</header>
+
+	<br><br>
+	<h3>Fractaler</h3>
+  <canvas id="unity-canvas" width=960 height=600 style="width: 700px; height: 600px; background: url('Build/webgl.jpg') center / cover"></canvas>
+  <script src="Build/webgl.loader.js"></script>
+  <script>
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+    }
+
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/webgl.data",
+      frameworkUrl: "Build/webgl.framework.js",
+      codeUrl: "Build/webgl.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DEJVOSS",
+      productName: "Fractaler",
+      productVersion: "1.0",
+      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    });
+  </script>
+    <ul>
+      <p>Controls: W, A, S, D to move around; +, - to zoom in/out.</p>
+    </ul>
+	<hr>
+
+	<div class="footer">
+		<p>Copyright DEJVOSS. All rights reserved.</p>
+	</div>
+
+</body>
+
 </html>
