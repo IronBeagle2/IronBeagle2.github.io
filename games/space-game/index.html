@@ -2,51 +2,58 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Space Game Pre-Alpha</title>
+  <title>DEJVOSS - Space Game</title>
+  <link rel="stylesheet" href="https://dejvoss.cz/files/styles.css">
   <link rel="shortcut icon" href="https://dejvoss.cz/files/favicon.ico">
-  <link rel="stylesheet" href="https://dejvoss.cz/files/style.css">
-
-  <script src="/files/UnityProgress.js"></script>
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Alpha.json", { onProgress: UnityProgress });
-  </script>
 </head>
 
+
 <body>
-  <div id="iframe">
-  </div>
-  <div id="wrap">
-    <header>
-      <div id="header_container" class="clearfix">
-        <a id="logo" href="https://dejvoss.cz">Home</a>
-        <ul id="menu">
-          <li><a href="https://dejvoss.cz">Home</a></li>
-          <li><a href="https://dejvoss.cz/games/">Games</a></li>
-          <li><a href="https://dejvoss.cz/blog/">Blog</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Space Game Pre-Alpha</div>
-      </div>
+  <header>
+    <div class="topnav">
+      <a id="logo" href="https://dejvoss.cz">Home</a>
+      <a href="https://dejvoss.cz">Home</a>
+      <a href="https://dejvoss.cz/news">News</a>
+      <a href="https://dejvoss.cz/games">Games</a>
+      <a href="https://dejvoss.cz/contact">Contact</a>
     </div>
+  </header>
 
-    <footer>
-      DEJVOSS &copy; 2019-2020
-    </footer>
+  <br><br>
+  <h3>Space Game</h3>
+  <canvas id="unity-canvas" width=960 height=600
+    style="width: 960px; height: 600px; background: url('Build/webgl.jpg') center / cover"></canvas>
+  <script src="Build/webgl.loader.js"></script>
+  <script>
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+    }
 
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h2> Controls</h2>
-    <p> WASD - Movement | Shift - Crouch | Q - Jetpack | E - Pick up objects | LMB - Shoot / Throw objects | RMB - Drop
-      objects | F - Flashlight | R - Reload Level | Z - Test Display</p> -->
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build/webgl.data",
+      frameworkUrl: "Build/webgl.framework.js",
+      codeUrl: "Build/webgl.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DEJVOSS",
+      productName: "Zombsody 2D",
+      productVersion: "1.0",
+      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    });
+  </script>
+  <ul>
+    <p>Controls: W, A, S, D to move; Mouse to look around, LMB to shoot, Q for jetpack.</p>
+  </ul>
+  <hr>
+
+  <div class="footer">
+    <p>Copyright DEJVOSS. All rights reserved.</p>
+  </div>
+
 </body>
 
 </html>
