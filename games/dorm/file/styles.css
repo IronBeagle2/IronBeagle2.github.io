@@ -1,3 +1,25 @@
 body {
-    
+    background-color: #000000;
+    background-image: url("bg_dark.gif");
+    color: white;
+    max-width: 680px;
+    margin: auto;
+
+}
+
+td {
+    background-image: url("bg.gif");
+}
+#light {
+    background-image: url("bg_light.gif");
+}
+
+a {
+    color:#a0a0ff
+}
+
+#centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
