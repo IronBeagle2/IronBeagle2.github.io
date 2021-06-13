@@ -1,13 +1,4 @@
 https://www.dejvoss.cz
 https://www.dejvoss.cz/news
 https://www.dejvoss.cz/games
-https://www.dejvoss.cz/games/dorm
-https://www.dejvoss.cz/games/escape
-https://www.dejvoss.cz/games/chambered
-https://www.dejvoss.cz/games/chambered/news
-https://www.dejvoss.cz/games/chambered/play
-https://www.dejvoss.cz/games/fractaler
-https://www.dejvoss.cz/games/zombsody
-https://www.dejvoss.cz/games/zombsody/play
-https://www.dejvoss.cz/games/space-game
 https://www.dejvoss.cz/contact
